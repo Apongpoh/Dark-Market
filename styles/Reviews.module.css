@@ -1,0 +1,38 @@
+.reviewBody {
+    padding: 15px;
+    font-family: monospace;
+    height: 88vh;
+    overflow: scroll;
+    scrollbar-width: thin;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.containerRate {
+    display: flex;
+    flex-direction: row;
+}
+
+.rowLeft {
+    width: 22%;
+}
+
+.rowRight {
+    width: 78%;
+}
+
+@media (min-width: 400px) and (max-width: 1120px) {
+    .reviewBody {
+        font-family: monospace;
+        height: 100vh;
+        overflow: scroll;
+        scrollbar-width: thin;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}

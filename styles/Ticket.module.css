@@ -1,0 +1,35 @@
+.container {
+    height: 100vh;
+    text-align: center;
+    padding: 50px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: white white;
+    font-family: monospace;
+}
+
+.formItem {
+    padding: 0 0 15px;
+}
+
+.messageInput {
+    padding: 5px;
+    margin: 0 0 5px;
+    width: 50%;
+}
+
+.showError {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(135, 35, 12, 0.164);
+    color: red;
+    margin: 5px;
+    text-align: center;
+}
+
+.showLoading {
+    padding: 10px;
+    margin: 5px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}

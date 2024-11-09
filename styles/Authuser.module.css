@@ -1,0 +1,75 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+
+.rowLeft {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 30%;
+    height: 100vh;
+    text-align: center;
+    background: rgb(226, 240, 227);
+    background: linear-gradient(0deg, rgba(226, 240, 227, 1) 47%, rgba(142, 150, 197, 1) 100%);
+}
+
+.rowRight {
+    background-image: url('/terre.svg');
+    background-size: 60%;
+    background-position: center;
+    flex: 70%;
+}
+
+.authForm {
+    padding: 20px;
+}
+
+.authInput {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+.authInput:focus {
+    background-color: lightblue;
+}
+
+.showError {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(135, 35, 12, 0.164);
+    color: red;
+    margin: 2px;
+}
+
+.showLoading,
+.showSuccess {
+    padding: 10px;
+    margin: 5px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive layout */
+@media only screen and (max-width: 700px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .rowRight {
+        font-size: larger;
+        width: 100%;
+        padding: 5%;
+    }
+
+    .rowLeft {
+        font-size: larger;
+        width: 100%;
+        padding: 20%;
+    }
+
+    .logoName {
+        padding: 10px;
+    }
+}

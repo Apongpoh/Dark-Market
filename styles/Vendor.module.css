@@ -1,0 +1,196 @@
+.misc {
+    padding: 30px;
+    margin: 28px;
+    height: 85vh;
+    font-family: monospace;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    font-size: large;
+    background-color: #e6edee;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.misc p {
+    margin: 15px;
+}
+
+.misc h3 {
+    color: green;
+}
+
+.misc h2 {
+    color: green;
+}
+
+.headings {
+    text-align: center;
+}
+
+/* manage vendor */
+.vendor {
+    display: flex;
+    flex-direction: row;
+}
+
+.vendorLeft {
+    margin: 0;
+    padding: 15px;
+    flex: 25%;
+    border-right: 2px solid #e6edee;
+    height: 90vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: white white;
+    text-align: center;
+    font-family: monospace;
+    background-color: rgba(230, 239, 230, 0.406);
+}
+
+.vendorMiddle {
+    margin: 0;
+    padding: 15px;
+    flex: 50%;
+    border-right: 2px solid #e6edee;
+    height: 90vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: white white;
+    font-family: monospace;
+    background-color: rgba(230, 239, 230, 0.406);
+}
+
+.vendorRight {
+    margin: 0;
+    padding: 15px;
+    flex: 25%;
+    border-right: 2px solid rgba(9, 6, 13, 0.048);
+    height: 90vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: white white;
+    font-family: monospace;
+    background-color: rgba(230, 239, 230, 0.406);
+}
+
+.formItem {
+    padding: 10px;
+}
+
+.formInput {
+    padding: 10px;
+    width: 100%;
+}
+
+.formInput:focus {
+    background-color: lightblue;
+}
+
+.productList {
+    padding: 10px;
+}
+
+.productItem {
+    padding: 10px;
+    margin: 0 0 10px;
+    border: 1px solid #e6edee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.productItem:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    margin-left: 22%;
+    padding: 1%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip:hover {
+    color: rgba(150, 3, 3, 0.474);
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tablecontainer {
+    height: 90vh;
+}
+
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.td, .th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* Responsive layout */
+/* Mobile */
+@media (min-width: 400px) and (max-width: 501px) {
+    .vendor {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+
+/* Mobile and small Tablet */
+@media (min-width: 501px) and (max-width: 701px) {
+    .vendor {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+    .vendor {
+        display: flex;
+        flex-direction: column;
+    }
+}

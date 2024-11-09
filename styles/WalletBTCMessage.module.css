@@ -1,0 +1,296 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    font-family: monospace;
+}
+
+.left {
+    flex: 22%;
+    border: 1px solid rgb(243, 238, 238);
+    padding: 20px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.right {
+    flex: 78%;
+    border: 1px solid rgb(242, 238, 238);
+    padding: 20px;
+    height: 90vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: white white;
+}
+
+
+
+.heading {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.headingAccount {
+    margin: 0 0 20px;
+    border: 1px solid ghostwhite;
+    background-color: ghostwhite;
+    border-radius: 5px;
+    height: 20%;
+    padding: 10px;
+}
+
+.headingAccount h3 {
+    margin: 0 0 20%;
+}
+
+.headingAccount p {
+    margin: 0 0 7%;
+}
+
+li.items {
+    margin: 0 0 25px 0;
+}
+
+.btn {
+    color: red;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.details {
+    font-weight: bolder;
+    margin: 0 0 10px;
+    padding: 10px 10px 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+}
+
+.summary {
+    color: green;
+    font-size: large;
+    cursor: pointer;
+}
+
+.summary:hover {
+    background-color: rgba(30, 22, 14, 0.058);
+}
+
+.itemsAccount {
+    list-style-type: none;
+    margin: 0 0 10px 0;
+    padding: 10px;
+}
+
+.itemsAccount li {
+    margin: 0 0 20px 0;
+}
+
+.receive {
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.select {
+    padding: 8px;
+    margin: 0 0 10px;
+}
+
+.qrcode {
+    margin: 0 10px;
+    padding: 20px 0px 20px 0px;
+    background-color: #eee5e575;
+    border-radius: 5px;
+}
+
+.accountForm {
+    padding: 0 0 20px;
+    margin: 10px 0 0;
+}
+
+.formItem {
+    padding: 0 0 20px;
+}
+
+.form {
+    text-align: center;
+}
+
+.walletInput {
+    padding: 5px;
+    margin: 10px;
+}
+
+.messageInput {
+    padding: 5px;
+    margin: 0 0 10px;
+    width: 100%;
+}
+
+.showError {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(135, 35, 12, 0.164);
+    color: red;
+    margin: 5px;
+    text-align: center;
+}
+
+.showLoading {
+    padding: 10px;
+    margin: 5px;
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+
+.tooltip {
+
+    position: relative;
+
+    display: inline-block;
+
+    cursor: pointer;
+
+}
+
+
+
+.tooltip:hover {
+
+    color: rgba(150, 3, 3, 0.474);
+
+}
+
+
+
+.tooltip .tooltiptext {
+
+    visibility: hidden;
+
+    width: 120px;
+
+    background-color: black;
+
+    color: #fff;
+
+    text-align: center;
+
+    border-radius: 6px;
+
+    padding: 5px 0;
+
+    position: absolute;
+
+    z-index: 1;
+
+    bottom: 150%;
+
+    left: 50%;
+
+    margin-left: -60px;
+
+}
+
+
+
+.tooltip .tooltiptext::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 100%;
+
+    left: 50%;
+
+    margin-left: -5px;
+
+    border-width: 5px;
+
+    border-style: solid;
+
+    border-color: black transparent transparent transparent;
+
+}
+
+
+
+.tooltip:hover .tooltiptext {
+
+    visibility: visible;
+
+}
+
+
+
+.listItem {
+
+    list-style-type: none;
+
+}
+
+
+
+.dropdown {
+
+    position: relative;
+
+}
+
+
+
+.dropdownContent {
+
+    display: none;
+
+    position: absolute;
+
+    background-color: white;
+
+    padding: 5px 10px;
+
+    list-style-type: none;
+
+    font-family: monospace;
+
+    font-size: medium;
+
+    border-radius: 5px;
+
+}
+
+
+
+.dropdowm:hover .dropdownContent {
+
+    display: inline-block;
+
+}
+
+
+
+.dropdownContent li {
+
+    padding: 5px;
+
+    margin: 0 0 5px;
+
+}
+
+
+
+.dropdownContent li:hover {
+
+    background-color: rgba(4, 15, 4, 0.1);
+
+    padding: 5px;
+
+    margin: 0 0 5px;
+
+    transition: 0.5 ease;
+
+    border-radius: 3%;
+
+    color: white;
+
+}
