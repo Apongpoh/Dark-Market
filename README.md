@@ -1,3 +1,19 @@
+# Dark-Market
+
+This project is intended for educational purposes only. 
+
+## Disclaimer
+The code provided in this repository is for learning and educational purposes. It is not intended for use in any production environments or for any illegal activities. Use this code responsibly and at your own risk.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Usage
+You are free to use, modify, and distribute this code, but please give credit to the original author and do not use it for malicious purposes.
+
+## Contributions
+Contributions are welcome! Please open an issue or submit a pull request if you have improvements or suggestions.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 
